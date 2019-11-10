@@ -1,0 +1,38 @@
+$search-bar-height: 100%;
+$search-bar-width: $search-bar-height;
+$search-bar-margin-top: 5%;
+$we-do-bottom-main-color: #2183d1;
+$we-do-top-main-color: #03bdf447;
+$search-bar-list-width: 450px;
+.searching-list-container {
+    height: $search-bar-height;
+    width: $search-bar-width;
+    padding-top: $search-bar-margin-top;
+    background-image: linear-gradient($we-do-top-main-color, $we-do-bottom-main-color);
+    .search-bar-form {
+        width: $search-bar-list-width;
+        mat-form-field {
+            width: $search-bar-list-width;
+        }
+
+        $signup-form-btn-margin-top: 2%;
+        .search-bar-submit-btn {
+            margin-top: $signup-form-btn-margin-top;
+        }
+    }
+    .signUpError {
+        margin-top: 10px;
+        border: 1px solid #f44336;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: #f44336ab;
+        color: #fff;
+    }
+
+    .view-container {
+        height: 50%;
+        width: 100%;
+        overflow: hidden;
+        margin-top: 2%;
+    }
+}

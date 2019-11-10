@@ -1,0 +1,17 @@
+<div class="view-element"  fxLayout="column">
+    <mat-card>
+        <div *ngIf="!viewData">
+            No data to show
+        </div>
+        <div *ngIf="viewData">
+            <mat-card-title>
+                    {{ viewData.title }}
+            </mat-card-title>
+            <mat-card-content>
+                <p>Score: {{ viewData.score }}</p>
+                <p>Count: {{ viewData.count }}</p>
+                <p>Link: {{ viewData.link }}</p>
+            </mat-card-content>
+        </div>
+    </mat-card>
+</div>

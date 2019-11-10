@@ -1,0 +1,13 @@
+<div class="list-container"  fxLayout="column">
+    <mat-list role="list">
+        <mat-list-item
+            *ngFor="let answer of (storage | async).storage; let i = index"
+            role="listitem"
+            (click)="onViewClicked(i)"
+        >
+            <div class="list-item">
+                {{ answer.title }}
+            </div>
+        </mat-list-item>
+    </mat-list>
+</div>

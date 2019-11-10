@@ -1,0 +1,32 @@
+
+<section class="searching-list-container">
+    <form
+        class="search-bar-form"
+        fxLayout="column"
+        fxLayoutAlign="center"
+        #searchBurForm="ngForm"
+        (ngSubmit)="onSubmit(searchBurForm)"
+    >
+        <mat-form-field>
+            <input
+                name="searchBar"
+                ngModel
+                matInput
+                placeholder="Search for new answer"
+                type="text"
+            />
+        </mat-form-field>
+        <button class="search-bar-submit-btn" type="submit" mat-raised-button color="primary">
+            Search
+        </button>
+    </form>
+    <div class="view-container"  fxLayout="row">
+        <app-item-list
+            (onUpdateViewId)="onViewClicked($event)"
+        >
+        </app-item-list>
+        <app-viewer
+            [viewData]="viewData"
+        ></app-viewer>
+    </div>
+</section>

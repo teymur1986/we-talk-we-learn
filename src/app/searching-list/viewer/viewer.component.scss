@@ -1,0 +1,9 @@
+$search-bar-height: 100%;
+$search-viewer-width: 800px;
+mat-card {
+    height: $search-bar-height;
+}
+.view-element {
+    height: $search-bar-height;
+    width: $search-viewer-width;
+}

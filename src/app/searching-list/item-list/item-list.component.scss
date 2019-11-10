@@ -1,0 +1,19 @@
+$search-bar-height: 100%;
+$search-bar-list-width: 450px;
+.list-container {
+    width: $search-bar-list-width;
+    max-width: $search-bar-list-width;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: $search-bar-height;
+    text-align: center;
+
+    .list-item{
+        padding: 5px;
+        text-align: center;
+        justify-content: space-around;
+        border: 1px solid #222;
+        width: $search-bar-list-width;
+        cursor: pointer;
+    }
+}
